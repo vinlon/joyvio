@@ -1,0 +1,149 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="Web.Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--<title></title>--%>
+    <link rel="Shortcut Icon" href="favicon.ico" type="image/x-icon" />
+    <link href="/!css/common.css" rel="Stylesheet" type="text/css" />
+    <script src="/!js/jquery-1.7.2.min.js" type="text/javascript"></script>
+    <script src="/!js/jquery.showpng.js" type="text/javascript"></script>
+    <script src="/!js/menu.js" type="text/javascript"></script>
+    <script src="/!js/default.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            //模板页JS
+            //所有页面顶部一级菜单焦点定位
+            var pathArr = ["/Product/", "/About/", "/Agriculture/", "/Food/", "/News/", "/JoinUs/"];
+            for (var i = 0; i < pathArr.length; i++) {
+                if (location.href.indexOf(pathArr[i]) != -1) {
+                    $(".navbar .nav").children("ul").eq(0).children("li").eq(i + 1).children("a").eq(0).addClass("selected");
+                    break;
+                }
+            }
+
+            //导航子菜单内a标签的宽度
+            $('[name=navigation]').eq(2).addClass('fourli');
+            //导航第一个子菜单和父菜单的连接必须相同（又是客户的坑爹需求，早知道这样，做你妹的动态啊.....）
+            $('[name=navigation]').each(function () {
+                var url = $(this).find('a').attr('href')
+                $(this).find('li>a').eq(0).attr('href', url);
+            });
+
+            //联想控股大家庭
+            $(".member").hover(function () {
+                $(".membertxt").addClass("membertxt_c");
+            }, function () {
+                $(".membertxt").removeClass("membertxt_c");
+            })
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="headerbar">
+        <div class="header">
+            <p class="logo">
+                <a href="/Index.aspx">
+                    <img src="/!images/logo.png" alt="佳沃官网" /></a></p>
+            <div class="header_right">
+                <p class="language">
+                    <a href="/EN/Index.aspx" class="font_arial">English</a><span>|</span><a href="/Index.aspx"
+                        class="font_YH">中文</a></p>
+                <div class="searchbar">
+                    <asp:TextBox ID="Search" runat="server" CssClass="search"></asp:TextBox><asp:ImageButton
+                        ID="Btn_Search" src="/!images/btn_search.jpg" runat="server" />
+                </div>
+                <div class="navbar">
+                    <div class="nav">
+                        <ul>
+                            <li class="firstli"><a target="_blank" href="http://joyvio.tmall.com/">网上商城</a></li>
+                            <li class="secli" name="navigation"><a href="/Product/Index.aspx">佳沃产品</a>
+                                <ul>
+                                    <li><a href="/Product/Index.aspx?skip=0">蓝莓</a></li>
+                                    <li><a href="/Product/Index.aspx?skip=1">猕猴桃</a></li>
+                                    <li><a href="/Product/Index.aspx?skip=2">其他水果</a></li>
+                                    <li><a href="/Product/Index.aspx?skip=3">茶叶</a></li>
+                                </ul>
+                            </li>
+                            <asp:Repeater runat="server" ID="repMenu">
+                                <ItemTemplate>
+                                    <li name="navigation"><a href="<%#Common.GetNavigationUrl((Container.DataItem as FrontendNavigation))%>">
+                                        <%#(Container.DataItem as FrontendNavigation).NavName %></a>
+                                        <ul>
+                                            <asp:Repeater runat="server" DataSource="<%#GetChildren(Container.DataItem as FrontendNavigation) %>">
+                                                <ItemTemplate>
+                                                    <li><a href="<%#Common.GetNavigationUrl((Container.DataItem as FrontendNavigation))%>">
+                                                        <%#(Container.DataItem as FrontendNavigation).NavName %></a></li>
+                                                </ItemTemplate>
+                                            </asp:Repeater>
+                                        </ul>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+                        </ul>
+                        <p class="clear">
+                        </p>
+                    </div>
+                    <div class="member">
+                        <p class="membertxt">
+                            联想控股大家庭</p>
+                        <ul>
+                            <li style="font-size: 14px;"><a target="_blank" href="http://www.legendholdings.com.cn/">
+                                联想控股</a></li>
+                            <li style="background: url(/!images/icon_meb.jpg) no-repeat 210px center;">联想控股成员企业</li>
+                            <li><a target="_blank" href="http://www.lenovo.com.cn/">联想集团(Lenovo)</a></li>
+                            <li><a target="_blank" href="http://www.raycomchina.com/">融科智地房地产股份有限公司</a></li>
+                            <li><a target="_blank" href="http://www.legendholdings.com.cn/Business/Wine.aspx">丰联集团</a></li>
+                            <li><a target="_blank" href="http://www.xingheng.com.cn/cn/indexcn.html">苏州星恒电源有限公司</a></li>
+                            <li><a target="_blank" href="http://www.legendholdings.com.cn/Business/BetterChain.aspx">
+                                增益供应链</a></li>
+                            <li><a target="_blank" href="http://www.legendholdings.com.cn/Business/EnsenCare.aspx">
+                                安信颐和</a></li>
+                            <li><a target="_blank" href="http://www.zuche.com/">神州租车</a></li>
+                            <li><a target="_blank" href="http://www.huge.com.cn/">上海弘基企业（集团）股份有限公司</a></li>
+                            <li><a target="_blank" href="http://www.chinauib.com/">北京联合保险经纪有限公司</a></li>
+                            <li><a target="_blank" href="http://www.lakala.com/">拉卡拉支付有限公司</a></li>
+                            <li><a target="_blank" href="http://www.legendholdings.com.cn/Business/ZhengqiFinancial.aspx">
+                                正奇安徽金融控股有限公司</a></li>
+                            <li><a target="_blank" href="http://www.levima.cn">联泓集团有限公司</a></li>
+                            <li><a target="_blank" href="http://www.legendcapital.com.cn/">君联资本</a></li>
+                            <li><a target="_blank" href="http://www.honycapital.com/">弘毅投资</a></li>
+                            <li><a target="_blank" href="http://www.legendstar.com.cn">联想之星</a></li>
+                        </ul>
+                    </div>
+                    <p class="clear">
+                    </p>
+                </div>
+                <p class="clear">
+                </p>
+            </div>
+            <p class="clear">
+            </p>
+        </div>
+        <p class="clear">
+        </p>
+    </div>
+    <p class="clear">
+    </p>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+    <p class="clear">
+    </p>
+    <div class="footerbar">
+        <div class="footer">
+            <div class="copyright">
+                版权© 2013 佳沃有限公司版权所有 <a target="_blank" href="http://www.miibeian.gov.cn/">京ICP备12046250号</a>
+                京公网安备110108006812号</div>
+            <div class="footer_right">
+                <a href="/Sitemap.aspx">网站地图</a> | <a href="/ContactUs.aspx">联系我们</a> | <a target="_blank"
+                    href="http://joyvio.tmall.com/">进入电商</a></div>
+            <p class="clear">
+            </p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2D70A7C2-7FB3-4365-9B77-E261748C1231}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Web</RootNamespace>
+    <AssemblyName>Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AspNetPager">
+      <HintPath>..\Lib\AspNetPager.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="!css\about.css" />
+    <Content Include="!css\common.css" />
+    <Content Include="!css\food.css" />
+    <Content Include="!css\ie6fixed.css" />
+    <Content Include="!css\index.css" />
+    <Content Include="!css\lrtk.css" />
+    <Content Include="!css\news.css" />
+    <Content Include="!css\product.css" />
+    <Content Include="!css\style.css" />
+    <Content Include="!css\system.css" />
+    <Content Include="!images\about_company.jpg" />
+    <Content Include="!images\about_intro.jpg" />
+    <Content Include="!images\about_philosophy.jpg" />
+    <Content Include="!images\about_pic1.jpg" />
+    <Content Include="!images\about_pic2.jpg" />
+    <Content Include="!images\about_pic3.jpg" />
+    <Content Include="!images\about_social.jpg" />
+    <Content Include="!images\agriculture_pic1.jpg" />
+    <Content Include="!images\agriculture_pic2.jpg" />
+    <Content Include="!images\agriculture_pic3.jpg" />
+    <Content Include="!images\agriculture_pic4.jpg" />
+    <Content Include="!images\agriculture_pic5.jpg" />
+    <Content Include="!images\agriculture_pic6.jpg" />
+    <Content Include="!images\banner_pic1.jpg" />
+    <Content Include="!images\banner_pic2.jpg" />
+    <Content Include="!images\banner_pic3.jpg" />
+    <Content Include="!images\banner_txt1.gif" />
+    <Content Include="!images\banner_txt2.gif" />
+    <Content Include="!images\banner_txt3.gif" />
+    <Content Include="!images\blacktea_pic1.jpg" />
+    <Content Include="!images\blacktea_pic10.jpg" />
+    <Content Include="!images\blacktea_pic2.jpg" />
+    <Content Include="!images\blacktea_pic3.jpg" />
+    <Content Include="!images\blacktea_pic4.jpg" />
+    <Content Include="!images\blacktea_pic5.jpg" />
+    <Content Include="!images\blacktea_pic6.jpg" />
+    <Content Include="!images\blacktea_pic7.jpg" />
+    <Content Include="!images\blacktea_pic8.jpg" />
+    <Content Include="!images\blacktea_pic9.jpg" />
+    <Content Include="!images\blueberries_pic1.jpg" />
+    <Content Include="!images\blueberries_pic2.jpg" />
+    <Content Include="!images\blueberries_pic3.jpg" />
+    <Content Include="!images\blueberries_pic4.jpg" />
+    <Content Include="!images\blueberries_pic5.jpg" />
+    <Content Include="!images\blueberries_pic6.jpg" />
+    <Content Include="!images\bottom_pic1.jpg" />
+    <Content Include="!images\bottom_pic2.jpg" />
+    <Content Include="!images\btn_buy.gif" />
+    <Content Include="!images\btn_buy.jpg" />
+    <Content Include="!images\btn_buyb.jpg" />
+    <Content Include="!images\btn_buyfruits.gif" />
+    <Content Include="!images\btn_buyfruits.jpg" />
+    <Content Include="!images\btn_buykiwi.gif" />
+    <Content Include="!images\btn_buykiwi.jpg" />
+    <Content Include="!images\btn_buytea.jpg" />
+    <Content Include="!images\btn_kiwibuy.jpg" />
+    <Content Include="!images\btn_left_off.jpg" />
+    <Content Include="!images\btn_left_on.jpg" />
+    <Content Include="!images\btn_right_off.jpg" />
+    <Content Include="!images\btn_right_on.jpg" />
+    <Content Include="!images\btn_search.jpg" />
+    <Content Include="!images\btn_submit.jpg" />
+    <Content Include="!images\companyp_pic1.jpg" />
+    <Content Include="!images\companyp_pic2.jpg" />
+    <Content Include="!images\favorite.jpg" />
+    <Content Include="!images\flawless_pic1.jpg" />
+    <Content Include="!images\flawless_pic10.jpg" />
+    <Content Include="!images\flawless_pic11.jpg" />
+    <Content Include="!images\flawless_pic12.jpg" />
+    <Content Include="!images\flawless_pic13.jpg" />
+    <Content Include="!images\flawless_pic14.jpg" />
+    <Content Include="!images\flawless_pic15.jpg" />
+    <Content Include="!images\flawless_pic16.jpg" />
+    <Content Include="!images\flawless_pic17.jpg" />
+    <Content Include="!images\flawless_pic18.jpg" />
+    <Content Include="!images\flawless_pic19.jpg" />
+    <Content Include="!images\flawless_pic2.jpg" />
+    <Content Include="!images\flawless_pic20.jpg" />
+    <Content Include="!images\flawless_pic21.jpg" />
+    <Content Include="!images\flawless_pic22.jpg" />
+    <Content Include="!images\flawless_pic23.jpg" />
+    <Content Include="!images\flawless_pic24.jpg" />
+    <Content Include="!images\flawless_pic25.jpg" />
+    <Content Include="!images\flawless_pic26.jpg" />
+    <Content Include="!images\flawless_pic27.jpg" />
+    <Content Include="!images\flawless_pic28.jpg" />
+    <Content Include="!images\flawless_pic29.jpg" />
+    <Content Include="!images\flawless_pic3.jpg" />
+    <Content Include="!images\flawless_pic4.jpg" />
+    <Content Include="!images\flawless_pic5.jpg" />
+    <Content Include="!images\flawless_pic6.jpg" />
+    <Content Include="!images\flawless_pic7.jpg" />
+    <Content Include="!images\flawless_pic8.jpg" />
+    <Content Include="!images\flawless_pic9.jpg" />
+    <Content Include="!images\focus_off.jpg" />
+    <Content Include="!images\focus_on.jpg" />
+    <Content Include="!images\foodtrend_pic.jpg" />
+    <Content Include="!images\food_listpic1.jpg" />
+    <Content Include="!images\food_listpic2.jpg" />
+    <Content Include="!images\food_listpic3.jpg" />
+    <Content Include="!images\food_listpic4.jpg" />
+    <Content Include="!images\food_listpic5.jpg" />
+    <Content Include="!images\food_listpic6.jpg" />
+    <Content Include="!images\food_pic1.jpg" />
+    <Content Include="!images\food_pic1_1.jpg" />
+    <Content Include="!images\food_pic1_2.jpg" />
+    <Content Include="!images\food_pic2.jpg" />
+    <Content Include="!images\food_pic2_1.jpg" />
+    <Content Include="!images\food_pic2_2.jpg" />
+    <Content Include="!images\food_pic3.jpg" />
+    <Content Include="!images\food_pic3_1.jpg" />
+    <Content Include="!images\food_pic3_2.jpg" />
+    <Content Include="!images\food_pic4.jpg" />
+    <Content Include="!images\food_pic5.jpg" />
+    <Content Include="!images\food_pic6.jpg" />
+    <Content Include="!images\food_pic7.jpg" />
+    <Content Include="!images\food_pic8.jpg" />
+    <Content Include="!images\food_pic9.jpg" />
+    <Content Include="!images\fruitsplace_pic1.jpg" />
+    <Content Include="!images\fruitsplace_pic2.jpg" />
+    <Content Include="!images\fruits_pic1.jpg" />
+    <Content Include="!images\fruits_pic10.jpg" />
+    <Content Include="!images\fruits_pic11.jpg" />
+    <Content Include="!images\fruits_pic12.jpg" />
+    <Content Include="!images\fruits_pic2.jpg" />
+    <Content Include="!images\fruits_pic3.jpg" />
+    <Content Include="!images\fruits_pic4.jpg" />
+    <Content Include="!images\fruits_pic5.jpg" />
+    <Content Include="!images\fruits_pic6.jpg" />
+    <Content Include="!images\fruits_pic7.jpg" />
+    <Content Include="!images\fruits_pic8.jpg" />
+    <Content Include="!images\fruits_pic9.jpg" />
+    <Content Include="!images\greentea_pic1.jpg" />
+    <Content Include="!images\greentea_pic10.jpg" />
+    <Content Include="!images\greentea_pic2.jpg" />
+    <Content Include="!images\greentea_pic3.jpg" />
+    <Content Include="!images\greentea_pic4.jpg" />
+    <Content Include="!images\greentea_pic5.jpg" />
+    <Content Include="!images\greentea_pic6.jpg" />
+    <Content Include="!images\greentea_pic7.jpg" />
+    <Content Include="!images\greentea_pic8.jpg" />
+    <Content Include="!images\greentea_pic9.jpg" />
+    <Content Include="!images\group1_bg.jpg" />
+    <Content Include="!images\group1_bg.png" />
+    <Content Include="!images\group1_layer1.png" />
+    <Content Include="!images\group1_layer2.png" />
+    <Content Include="!images\group1_layer3.png" />
+    <Content Include="!images\group1_layer4.png" />
+    <Content Include="!images\group1_layer5.png" />
+    <Content Include="!images\group1_screen2.jpg" />
+    <Content Include="!images\group1_text.gif" />
+    <Content Include="!images\group1_2pic.jpg" />
+    <Content Include="!images\group2_2pic.gif" />
+    <Content Include="!images\group2_2pic.jpg" />
+    <Content Include="!images\group2_3title.jpg" />
+    <Content Include="!images\group2_bg.jpg" />
+    <Content Include="!images\group2_bg.png" />
+    <Content Include="!images\group2_layer1.png" />
+    <Content Include="!images\group2_layer2.png" />
+    <Content Include="!images\group2_layer3.png" />
+    <Content Include="!images\group2_layer4.png" />
+    <Content Include="!images\group2_text.gif" />
+    <Content Include="!images\group3_2pic.gif" />
+    <Content Include="!images\group3_2pic.jpg" />
+    <Content Include="!images\group3_bg.jpg" />
+    <Content Include="!images\group3_layer1.png" />
+    <Content Include="!images\group3_layer2.png" />
+    <Content Include="!images\group3_layer3.png" />
+    <Content Include="!images\group3_layer4.png" />
+    <Content Include="!images\group3_layer5.png" />
+    <Content Include="!images\group3_screen2.jpg" />
+    <Content Include="!images\group3_text.jpg" />
+    <Content Include="!images\group3_title.jpg" />
+    <Content Include="!images\group4_2bg.jpg" />
+    <Content Include="!images\group4_2txt.gif" />
+    <Content Include="!images\group4_3bg.jpg" />
+    <Content Include="!images\group4_3txt.jpg" />
+    <Content Include="!images\group4_bg.jpg" />
+    <Content Include="!images\group4_txt.gif" />
+    <Content Include="!images\groupLeft.gif" />
+    <Content Include="!images\groupLeft2.gif" />
+    <Content Include="!images\groupRight.gif" />
+    <Content Include="!images\groupRight2.gif" />
+    <Content Include="!images\header_bg.jpg" />
+    <Content Include="!images\healthsafety_pic1.jpg" />
+    <Content Include="!images\icon.gif" />
+    <Content Include="!images\icon.jpg" />
+    <Content Include="!images\icon1.gif" />
+    <Content Include="!images\icon1.jpg" />
+    <Content Include="!images\icon2.gif" />
+    <Content Include="!images\icon_affiliate.jpg" />
+    <Content Include="!images\icon_bottom.jpg" />
+    <Content Include="!images\icon_cartoff.jpg" />
+    <Content Include="!images\icon_cartoff1.jpg" />
+    <Content Include="!images\icon_carton.jpg" />
+    <Content Include="!images\icon_companyp.gif" />
+    <Content Include="!images\icon_dot.gif" />
+    <Content Include="!images\icon_food1.gif" />
+    <Content Include="!images\icon_food2.gif" />
+    <Content Include="!images\icon_food3.gif" />
+    <Content Include="!images\icon_fruits.gif" />
+    <Content Include="!images\icon_home.jpg" />
+    <Content Include="!images\icon_join.jpg" />
+    <Content Include="!images\icon_kiwi.gif" />
+    <Content Include="!images\icon_kiwip.gif" />
+    <Content Include="!images\icon_map.jpg" />
+    <Content Include="!images\icon_meb.jpg" />
+    <Content Include="!images\icon_member.gif" />
+    <Content Include="!images\icon_member.jpg" />
+    <Content Include="!images\icon_navlist.jpg" />
+    <Content Include="!images\icon_place.gif" />
+    <Content Include="!images\icon_productoff.jpg" />
+    <Content Include="!images\icon_productoff1.jpg" />
+    <Content Include="!images\icon_producton.jpg" />
+    <Content Include="!images\icon_top.gif" />
+    <Content Include="!images\icon_top.jpg" />
+    <Content Include="!images\index_line1.jpg" />
+    <Content Include="!images\index_line2.jpg" />
+    <Content Include="!images\infortable.jpg" />
+    <Content Include="!images\input_textbg1.jpg" />
+    <Content Include="!images\input_textbg2.jpg" />
+    <Content Include="!images\input_textbg3.jpg" />
+    <Content Include="!images\input_textbg4.jpg" />
+    <Content Include="!images\joinus_pic1.jpg" />
+    <Content Include="!images\joinus_pic2.jpg" />
+    <Content Include="!images\joinus_pic3.jpg" />
+    <Content Include="!images\kiwiplace_pic1.jpg" />
+    <Content Include="!images\kiwiplace_pic2.jpg" />
+    <Content Include="!images\kiwiplace_pic3.jpg" />
+    <Content Include="!images\kiwiplace_pic4.jpg" />
+    <Content Include="!images\kiwiprecious_pic1.jpg" />
+    <Content Include="!images\kiwiprecious_pic10.jpg" />
+    <Content Include="!images\kiwiprecious_pic11.jpg" />
+    <Content Include="!images\kiwiprecious_pic12.jpg" />
+    <Content Include="!images\kiwiprecious_pic2.jpg" />
+    <Content Include="!images\kiwiprecious_pic3.jpg" />
+    <Content Include="!images\kiwiprecious_pic4.jpg" />
+    <Content Include="!images\kiwiprecious_pic5.jpg" />
+    <Content Include="!images\kiwiprecious_pic6.jpg" />
+    <Content Include="!images\kiwiprecious_pic7.jpg" />
+    <Content Include="!images\kiwiprecious_pic8.jpg" />
+    <Content Include="!images\kiwiprecious_pic9.jpg" />
+    <Content Include="!images\kiwistory_pic1.jpg" />
+    <Content Include="!images\kiwistory_pic2.jpg" />
+    <Content Include="!images\kiwistory_pic3.jpg" />
+    <Content Include="!images\kiwistory_pic4.jpg" />
+    <Content Include="!images\kiwistory_pic5.jpg" />
+    <Content Include="!images\kiwi_banner.jpg" />
+    <Content Include="!images\kiwi_pic1.jpg" />
+    <Content Include="!images\kiwi_pic2.jpg" />
+    <Content Include="!images\kiwi_pic3.jpg" />
+    <Content Include="!images\live_pic.jpg" />
+    <Content Include="!images\logo.png" />
+    <Content Include="!images\lsfood_pic.jpg" />
+    <Content Include="!images\ls_kiwipic1.jpg" />
+    <Content Include="!images\ls_kiwipic10.jpg" />
+    <Content Include="!images\ls_kiwipic2.jpg" />
+    <Content Include="!images\ls_kiwipic3.jpg" />
+    <Content Include="!images\ls_kiwipic4.jpg" />
+    <Content Include="!images\ls_kiwipic5.jpg" />
+    <Content Include="!images\ls_kiwipic6.jpg" />
+    <Content Include="!images\ls_kiwipic7.jpg" />
+    <Content Include="!images\ls_kiwipic8.jpg" />
+    <Content Include="!images\ls_kiwipic9.jpg" />
+    <Content Include="!images\map.jpg" />
+    <Content Include="!images\map_pic.jpg" />
+    <Content Include="!images\menu0_0.gif" />
+    <Content Include="!images\menu1_1.gif" />
+    <Content Include="!images\menu1_2.gif" />
+    <Content Include="!images\menu2_1.gif" />
+    <Content Include="!images\menu2_2.gif" />
+    <Content Include="!images\menu3_1.gif" />
+    <Content Include="!images\menu3_2.gif" />
+    <Content Include="!images\menu4_1.gif" />
+    <Content Include="!images\menu4_2.gif" />
+    <Content Include="!images\menu5_0.gif" />
+    <Content Include="!images\nav_hoverbg.gif" />
+    <Content Include="!images\nav_hoverbg.jpg" />
+    <Content Include="!images\nav_sechoverbg.gif" />
+    <Content Include="!images\nav_sechoverbg.jpg" />
+    <Content Include="!images\news_banner.jpg" />
+    <Content Include="!images\news_bannerpic.jpg" />
+    <Content Include="!images\news_pic.jpg" />
+    <Content Include="!images\news_pic1.jpg" />
+    <Content Include="!images\news_spic.jpg" />
+    <Content Include="!images\orderkiwi_pic1.jpg" />
+    <Content Include="!images\orderkiwi_pic2.jpg" />
+    <Content Include="!images\orderkiwi_pic3.jpg" />
+    <Content Include="!images\orderkiwi_pic4.jpg" />
+    <Content Include="!images\orderkiwi_pic5.jpg" />
+    <Content Include="!images\order_bg.jpg" />
+    <Content Include="!images\order_pic1.jpg" />
+    <Content Include="!images\order_pic2.jpg" />
+    <Content Include="!images\order_pic3.jpg" />
+    <Content Include="!images\order_pic4.jpg" />
+    <Content Include="!images\order_pic5.jpg" />
+    <Content Include="!images\place_pic1.jpg" />
+    <Content Include="!images\place_pic2.jpg" />
+    <Content Include="!images\place_pic3.jpg" />
+    <Content Include="!images\place_pic4.jpg" />
+    <Content Include="!images\product_pic.gif" />
+    <Content Include="!images\ranking1.jpg" />
+    <Content Include="!images\ranking2.jpg" />
+    <Content Include="!images\ranking3.jpg" />
+    <Content Include="!images\ranking4.jpg" />
+    <Content Include="!images\ranking5.jpg" />
+    <Content Include="!images\ranking6.jpg" />
+    <Content Include="!images\relate_pic.jpg" />
+    <Content Include="!images\report_banner.jpg" />
+    <Content Include="!images\search_bg.jpg" />
+    <Content Include="!images\search_btn.jpg" />
+    <Content Include="!images\share_tqq.jpg" />
+    <Content Include="!images\share_tsina.jpg" />
+    <Content Include="!images\socialresponsibility_pic1.jpg" />
+    <Content Include="!images\subcompany_pic1.jpg" />
+    <Content Include="!images\submit_code.jpg" />
+    <Content Include="!images\system_pic1.jpg" />
+    <Content Include="!images\system_pic10.jpg" />
+    <Content Include="!images\system_pic11.jpg" />
+    <Content Include="!images\system_pic12.jpg" />
+    <Content Include="!images\system_pic13.jpg" />
+    <Content Include="!images\system_pic14.jpg" />
+    <Content Include="!images\system_pic2.jpg" />
+    <Content Include="!images\system_pic3.jpg" />
+    <Content Include="!images\system_pic4.jpg" />
+    <Content Include="!images\system_pic5.jpg" />
+    <Content Include="!images\system_pic6.jpg" />
+    <Content Include="!images\system_pic7.jpg" />
+    <Content Include="!images\system_pic8.jpg" />
+    <Content Include="!images\system_pic9.jpg" />
+    <Content Include="!images\textarea_bg.jpg" />
+    <Content Include="!images\traceability_pic.jpg" />
+    <Content Include="!js\default.js" />
+    <Content Include="!js\easing.js" />
+    <Content Include="!js\ieVersion.js" />
+    <Content Include="!js\jchlib.js" />
+    <Content Include="!js\jquery-1.7.2.min.js" />
+    <Content Include="!js\jquery.parallax-1.1.3.js" />
+    <Content Include="!js\jquery.scrollTo.js" />
+    <Content Include="!js\jquery.showpng.js" />
+    <Content Include="!js\JsLibArray.js" />
+    <Content Include="!js\JsLibString.js" />
+    <Content Include="!js\menu.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\loading.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_51xflash\play.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_51xflash\tit-ar.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_classicHB\btn-blue.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_classicHB\btn-gray.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_classicHC\btn-bg.png" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_classicHC\btn-red.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_games_tb\ar.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_kdui\dots.png" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_kdui\slider-arrows.png" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_kiki\ar-left.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_kiki\ar-right.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_kiki\tit-ar.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_pithy_tb\btn.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_pithy_tb\turn.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_qiyi\bg.jpg" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_qiyi\loading.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_sohusports\sh-btn.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_taobaomall\btn-bg2.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\img\mF_tbhuabao\btn-bg.gif" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_51xflash.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_51xflash.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_classicHB.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_classicHB.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_classicHC.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_classicHC.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_dleung.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_dleung.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_expo2010.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_expo2010.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_fancy.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_fancy.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_fscreen_tb.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_fscreen_tb.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_games_tb.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_games_tb.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_kdui.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_kdui.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_kiki.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_kiki.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_ladyQ.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_ladyQ.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_liquid.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_liquid.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_liuzg.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_liuzg.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_luluJQ.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_luluJQ.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_pconline.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_pconline.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_peijianmall.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_peijianmall.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_pithy_tb.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_pithy_tb.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_qiyi.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_qiyi.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_quwan.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_quwan.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_rapoo.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_rapoo.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_shutters.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_shutters.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_slide3D.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_slide3D.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_sohusports.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_sohusports.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_taobao2010.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_taobao2010.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_taobaomall.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_taobaomall.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_tbhuabao.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_tbhuabao.js" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_YSlider.css" />
+    <Content Include="!js\myFocus2.0.4\mf-pattern\mF_YSlider.js" />
+    <Content Include="!js\myFocus2.0.4\myfocus-2.0.4.min.js" />
+    <Content Include="!js\product.js" />
+    <Content Include="!js\ScrollPic.js" />
+    <Content Include="!js\slide.js" />
+    <Content Include="About\CompanyPhilosophy.aspx" />
+    <Content Include="About\Introduction.aspx" />
+    <Content Include="About\SocialResponsibility.aspx" />
+    <Content Include="About\SubCompany.aspx" />
+    <Content Include="Agriculture\AgricultureDetail.aspx" />
+    <Content Include="Agriculture\AgricultureIdea.aspx" />
+    <Content Include="Agriculture\Index.aspx" />
+    <Content Include="Agriculture\Trends.aspx" />
+    <Content Include="Agriculture\UC_AgricultureNews.ascx" />
+    <Content Include="Agriculture\UC_IdeaItems.ascx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="EN\!css\index.css" />
+    <Content Include="EN\!images\comingsoon.jpg" />
+    <Content Include="EN\!images\enindex.jpg" />
+    <Content Include="EN\Index.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Food\FoodDetail.aspx" />
+    <Content Include="Food\FoodTrend.aspx" />
+    <Content Include="Food\HealthSafety.aspx" />
+    <Content Include="Food\Index.aspx" />
+    <Content Include="Food\KiwiCooked.aspx" />
+    <Content Include="Food\KiwiDetail.aspx" />
+    <Content Include="Food\Recipe.aspx" />
+    <Content Include="Food\UC_CookBookRecommend.ascx" />
+    <Content Include="Food\UC_FoodNewsRecommend.ascx" />
+    <Content Include="Index.aspx" />
+    <Content Include="JoinUs\Affiliate.aspx" />
+    <Content Include="JoinUs\HR.aspx" />
+    <Content Include="JoinUs\HRDetail.aspx" />
+    <Content Include="JoinUs\Index.aspx" />
+    <Content Include="News\Index.aspx" />
+    <Content Include="News\News.aspx" />
+    <Content Include="News\Report.aspx" />
+    <Content Include="News\ReportDetail.aspx" />
+    <Content Include="News\Search.aspx" />
+    <Content Include="News\UC_Recommend.ascx" />
+    <Content Include="News\Video.aspx" />
+    <Content Include="Product\BlackTea.aspx" />
+    <Content Include="Product\BlueberryFlawless.aspx" />
+    <Content Include="Product\BlueberryStory.aspx" />
+    <Content Include="Product\FruitsDetail.aspx" />
+    <Content Include="Product\GreenTea.aspx" />
+    <Content Include="Product\Index.aspx" />
+    <Content Include="Product\KiwiPrecious.aspx" />
+    <Content Include="Product\KiwiStory.aspx" />
+    <Content Include="Sitemap.aspx" />
+    <Content Include="TraceabilitySystem.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="!helper\Common.cs" />
+    <Compile Include="About\CompanyPhilosophy.aspx.cs">
+      <DependentUpon>CompanyPhilosophy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\CompanyPhilosophy.aspx.designer.cs">
+      <DependentUpon>CompanyPhilosophy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\Introduction.aspx.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\Introduction.aspx.designer.cs">
+      <DependentUpon>Introduction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\SocialResponsibility.aspx.cs">
+      <DependentUpon>SocialResponsibility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\SocialResponsibility.aspx.designer.cs">
+      <DependentUpon>SocialResponsibility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About\SubCompany.aspx.cs">
+      <DependentUpon>SubCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About\SubCompany.aspx.designer.cs">
+      <DependentUpon>SubCompany.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agriculture\AgricultureDetail.aspx.cs">
+      <DependentUpon>AgricultureDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agriculture\AgricultureDetail.aspx.designer.cs">
+      <DependentUpon>AgricultureDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agriculture\AgricultureIdea.aspx.cs">
+      <DependentUpon>AgricultureIdea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agriculture\AgricultureIdea.aspx.designer.cs">
+      <DependentUpon>AgricultureIdea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agriculture\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agriculture\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agriculture\Trends.aspx.cs">
+      <DependentUpon>Trends.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agriculture\Trends.aspx.designer.cs">
+      <DependentUpon>Trends.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Agriculture\UC_AgricultureNews.ascx.cs">
+      <DependentUpon>UC_AgricultureNews.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agriculture\UC_AgricultureNews.ascx.designer.cs">
+      <DependentUpon>UC_AgricultureNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Agriculture\UC_IdeaItems.ascx.cs">
+      <DependentUpon>UC_IdeaItems.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Agriculture\UC_IdeaItems.ascx.designer.cs">
+      <DependentUpon>UC_IdeaItems.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EN\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EN\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\FoodDetail.aspx.cs">
+      <DependentUpon>FoodDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\FoodDetail.aspx.designer.cs">
+      <DependentUpon>FoodDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\FoodTrend.aspx.cs">
+      <DependentUpon>FoodTrend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\FoodTrend.aspx.designer.cs">
+      <DependentUpon>FoodTrend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\HealthSafety.aspx.cs">
+      <DependentUpon>HealthSafety.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\HealthSafety.aspx.designer.cs">
+      <DependentUpon>HealthSafety.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\KiwiCooked.aspx.cs">
+      <DependentUpon>KiwiCooked.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\KiwiCooked.aspx.designer.cs">
+      <DependentUpon>KiwiCooked.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\KiwiDetail.aspx.cs">
+      <DependentUpon>KiwiDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\KiwiDetail.aspx.designer.cs">
+      <DependentUpon>KiwiDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\Recipe.aspx.cs">
+      <DependentUpon>Recipe.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\Recipe.aspx.designer.cs">
+      <DependentUpon>Recipe.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\UC_CookBookRecommend.ascx.cs">
+      <DependentUpon>UC_CookBookRecommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\UC_CookBookRecommend.ascx.designer.cs">
+      <DependentUpon>UC_CookBookRecommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Food\UC_FoodNewsRecommend.ascx.cs">
+      <DependentUpon>UC_FoodNewsRecommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Food\UC_FoodNewsRecommend.ascx.designer.cs">
+      <DependentUpon>UC_FoodNewsRecommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinUs\Affiliate.aspx.cs">
+      <DependentUpon>Affiliate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinUs\Affiliate.aspx.designer.cs">
+      <DependentUpon>Affiliate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinUs\HR.aspx.cs">
+      <DependentUpon>HR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinUs\HR.aspx.designer.cs">
+      <DependentUpon>HR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinUs\HRDetail.aspx.cs">
+      <DependentUpon>HRDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinUs\HRDetail.aspx.designer.cs">
+      <DependentUpon>HRDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinUs\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinUs\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Master.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.Master.designer.cs">
+      <DependentUpon>Main.Master</DependentUpon>
+    </Compile>
+    <Compile Include="News\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\News.aspx.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\News.aspx.designer.cs">
+      <DependentUpon>News.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\ReportDetail.aspx.cs">
+      <DependentUpon>ReportDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\ReportDetail.aspx.designer.cs">
+      <DependentUpon>ReportDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Search.aspx.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Search.aspx.designer.cs">
+      <DependentUpon>Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="News\UC_Recommend.ascx.cs">
+      <DependentUpon>UC_Recommend.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\UC_Recommend.ascx.designer.cs">
+      <DependentUpon>UC_Recommend.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="News\Video.aspx.cs">
+      <DependentUpon>Video.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="News\Video.aspx.designer.cs">
+      <DependentUpon>Video.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\BlackTea.aspx.cs">
+      <DependentUpon>BlackTea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\BlackTea.aspx.designer.cs">
+      <DependentUpon>BlackTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\BlueberryFlawless.aspx.cs">
+      <DependentUpon>BlueberryFlawless.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\BlueberryFlawless.aspx.designer.cs">
+      <DependentUpon>BlueberryFlawless.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\BlueberryStory.aspx.cs">
+      <DependentUpon>BlueberryStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\BlueberryStory.aspx.designer.cs">
+      <DependentUpon>BlueberryStory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\FruitsDetail.aspx.cs">
+      <DependentUpon>FruitsDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\FruitsDetail.aspx.designer.cs">
+      <DependentUpon>FruitsDetail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\GreenTea.aspx.cs">
+      <DependentUpon>GreenTea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\GreenTea.aspx.designer.cs">
+      <DependentUpon>GreenTea.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\KiwiPrecious.aspx.cs">
+      <DependentUpon>KiwiPrecious.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\KiwiPrecious.aspx.designer.cs">
+      <DependentUpon>KiwiPrecious.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Product\KiwiStory.aspx.cs">
+      <DependentUpon>KiwiStory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Product\KiwiStory.aspx.designer.cs">
+      <DependentUpon>KiwiStory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sitemap.aspx.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sitemap.aspx.designer.cs">
+      <DependentUpon>Sitemap.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TraceabilitySystem.aspx.cs">
+      <DependentUpon>TraceabilitySystem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TraceabilitySystem.aspx.designer.cs">
+      <DependentUpon>TraceabilitySystem.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="!js\myFocus2.0.4\mf-pattern\img\mF_51xflash\Thumbs.db" />
+    <None Include="!js\myFocus2.0.4\mf-pattern\img\mF_kiki\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Utility.csproj">
+      <Project>{FC863A60-64BA-471F-B58E-08B0CE3C11BB}</Project>
+      <Name>Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSI.IService\WSI.IService.csproj">
+      <Project>{10B0C106-0F89-4959-B36E-799E4A576DCB}</Project>
+      <Name>WSI.IService</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSI.Model\WSI.Model.csproj">
+      <Project>{31587511-8E00-4B6B-81B1-C364A00C3D36}</Project>
+      <Name>WSI.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WSI.ServiceLocator\WSI.ServiceLocator.csproj">
+      <Project>{46DA72F5-063C-46C9-8D41-5C3939BDF9DC}</Project>
+      <Name>WSI.ServiceLocator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1652</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:8023/</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

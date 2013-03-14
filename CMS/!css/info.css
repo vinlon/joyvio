@@ -1,0 +1,115 @@
+﻿/*----InformationAdd.aspx----*/
+#selectNav
+{
+    padding: 2px 8px;
+    margin: 0;
+    height: 22px;
+    line-height: 22px;
+    background: url(/!images/btn_bg.jpg) repeat-x;
+    border: 1px solid #c5c5c5;
+    font-weight: lighter;
+}
+#navPanel
+{
+    width: 300px;
+    border: 1px solid #CCCCCC;
+}
+
+/*----InformationList.aspx----*/
+.infolist_title
+{
+    width: 500px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+
+/*----NavigationList.aspx----*/
+.front_nav ul
+{
+    padding: 0;
+    margin: 0;
+}
+.front_nav ul li
+{
+    list-style-type: none;
+    line-height: 28px;
+}
+.front_nav ul li img
+{
+    vertical-align: middle;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.front_nav .active
+{
+    margin: auto 10px;
+    width: 50px;
+}
+.front_nav .nav_name
+{
+    display: inline-block;
+    overflow: visible;
+    white-space: normal;
+}
+.front_nav .nav_url
+{
+    padding-left: 10px;
+    display: inline-block;
+    width: 300px;
+}
+.front_nav .nav_type
+{
+    display: inline-block;
+    width: 150px;
+    padding-right: 10px;
+}
+
+/*----AttachmentAdd.aspx----*/
+#container
+{
+    margin: 5px;
+    border: 1px solid #CCCCCC;
+    display: inline-block;
+}
+.upload_img
+{
+    margin: 5px 10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+}
+.upload_desc
+{
+    width: 650px;
+    margin: 5px;
+    border: 1px solid #CCC;
+    padding: 10px;
+}
+.img_cut
+{
+    clear: both;
+    width: 1300px;
+}
+.img_cut .content
+{
+    position: relative;
+    max-width: 400px;
+    max-height: 400px;
+    float: left;
+    border: 1px solid #CCC;
+    margin: 5px;
+    text-align: center;
+}
+.img_cut .content img
+{
+    max-width: 390px;
+    max-height: 390px;
+}
+.img_cut .content .drag
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: 2px solid #F00;
+}

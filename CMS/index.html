@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>网站后台管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=gb2312">
+    <script type="text/javascript">
+        if (self != top) {
+            top.location.href = self.location.href;
+        }
+    </script>
+</head>
+<frameset rows="64,*" frameborder="NO" border="0" framespacing="0" name="1">
+    <frame src="head.aspx" noresize="noresize" frameborder="no" name="topFrame" scrolling="no"
+        marginwidth="0" marginheight="0" target="main" />
+    <frameset cols="200,*" rows="842,*" id="frame">
+        <frame src="menu.aspx" name="leftFrame" noresize="noresize" width="200" marginwidth="0"
+            marginheight="0" frameborder="0" scrolling="auto" target="main" />
+        <frame src="Default.aspx" name="main" marginwidth="0" marginheight="0" frameborder="0"
+            scrolling="auto" target="_self" />
+    </frameset>
+    <noframes>
+        <body>
+        </body>
+    </noframes>
+</html>

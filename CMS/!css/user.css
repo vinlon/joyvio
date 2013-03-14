@@ -1,0 +1,26 @@
+﻿/*------RoleAdd.aspx-----*/
+.nav_panel
+{
+    display: inline-block;
+    border: 1px solid #CCC;
+    width: 500px;
+    padding: 10px;
+}
+.p_nav
+{
+    font-size: 15px;
+    font-weight: bold;
+}
+.item_nav
+{
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 40px;
+    font-style: italic;
+}
+.item_check
+{
+    display: block;
+    float: left;
+}

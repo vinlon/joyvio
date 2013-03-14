@@ -1,0 +1,22 @@
+﻿.system_left{ float:left; width:735px; text-align:left; margin:0 auto; overflow:hidden;}
+.systerm_way{ clear:both; width:100%; margin:12px auto; overflow:hidden;}
+.way_txt{ float:left; width:467px; height:77px; padding:30px; background:#5b6334; color:#ffffff; line-height:1.8em;}
+.way_title{ font-size:24px; font-family:SimHei; color:#f3efe3; margin-bottom:10px;}
+.way_left{ float:left; width:370px; text-align:left; margin:0 auto; overflow:hidden;}
+.inquiry_title{ height:40px; line-height:40px; padding:0 22px; background:#b0b49e; color:#f3efe3; font-size:24px; font-family:SimHei;}
+.inquiry_info{ padding:0 22px 11px; background:#d1d3c7; line-height:1.8em; color:#343434;}
+.inquiry_info img{ margin:8px 0;}
+.inquiry_infopad{ padding-left:46px;}
+.way_right{ float:right; width:353px; text-align:left; margin:0 auto; overflow:hidden;}
+.phone_way{ clear:both; padding:0 18px 13px; background:#d1d3c7; color:#343434; line-height:20px;}
+.phone_list{ clear:both; width:100%; text-align:left; margin:0 auto; overflow:hidden;}
+.phone_list li{ clear:both; padding-top:15px; line-height:1.8em;}
+.phone_list li img{ float:left; margin-right:14px; display:inline;}
+.system_right{ float:right; width:353px; text-align:left; margin:0 auto; overflow:hidden;}
+.code_bar{ clear:both; width:305px; height:96px; padding:50px 24px; background:#e8e9e2; color:#7e3189; line-height:20px;}
+.codemar{ margin-top:18px;}
+.code_input{ float:left; width:240px; height:25px; border:1px solid #ffffff; background:#ffffff; margin-right:5px; display:inline;}
+.right_title{ clear:both; height:38px; line-height:38px; padding:0 20px; background:#5b6334; font-size:24px; font-family:SimHei; color:#f3efe3; margin-top:12px;}
+.right_txt{ clear:both; padding:24px 20px; color:#343434; line-height:1.8em; background:#edeee9;}
+
+

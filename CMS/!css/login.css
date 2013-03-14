@@ -1,0 +1,92 @@
+﻿body
+{
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #000;
+    background-color: #EEF2FB;
+    margin: 0px;
+    padding: 0;
+}
+.error
+{
+    color: Red;
+}
+.login_top_bg
+{
+    width: 100%;
+    height: 41px;
+    background-image: url(../!images/login-top-bg.gif);
+    background-repeat: repeat-x;
+}
+.login_bg
+{
+    height: 532px;
+    margin: 1px auto 0;
+    background-image: url(../!images/login_bg.jpg);
+    background-repeat: repeat-x;
+}
+.login_txt
+{
+    padding-left: 20px;
+    background-image: url(../!images/user.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.login_psw
+{
+    padding-left: 20px;
+    background-image: url(../!images/lock.gif);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+.login_code
+{
+    width: 75px;
+    vertical-align: middle;
+}
+.b_left
+{
+    float: left;
+    width: 49.5%;
+    height: 532px;
+    background: url(../!images/login-content-bg.gif) no-repeat right center;
+}
+.b_right
+{
+    position: relative;
+    float: left;
+    width: 49.5%;
+    height: 532px;
+}
+.welcome
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.b_right table
+{
+    margin-left: 4%;
+}
+.b_right table tr td
+{
+    padding: 5px 0;
+}
+.b_right table tr td.table_left
+{
+    width: 60px;
+    text-align: left;
+}
+.button
+{
+    margin-right: 30px;
+}
+.login_txt_bt
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    color: #666666;
+    font-weight: bold;
+    margin-top: 175px;
+    margin-left: 4%;
+}

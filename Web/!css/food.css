@@ -1,0 +1,74 @@
+﻿.food_left{ float:left; width:735px; text-align:left; margin:0 auto; overflow:hidden;}
+.foot_title{ width:695px; height:50px; line-height:50px; padding:0 20px; text-align:left; font-size:30px; font-family:SimHei; color:#ffffff; margin:12px auto 0;}
+.title_bg1{ background:#c18ccf;}
+.title_bg2{ background:#b6c859;}
+.title_bg3{ background:#bf1e2e;}
+.food_linfo{width:315px; padding:20px 30px; background:#e8e7e7;}
+.food_rinfo{ width:300px; padding:20px 30px; background:#f1f1f1;}
+.info_title{ clear:both; font-size:20px; margin-bottom:6px;}
+.info_title1{ color:#523578;}
+.info_title2{ color:#7e5803;}
+.info_title3{ color:#d32452;}
+.food_list{ clear:both; width:100%; text-align:left; margin:0 auot; overflow:hidden;}
+.food_list li{ padding-left:15px; line-height:24px; font-size:13px; color:#5b5b5b;}
+.food_list li a:link,.food_list li a:visited{ color:#5b5b5b;}
+.food_list li a:hover,.food_list li a:active{ color:#7d3189;}
+.food_list1 li{ background:url(/!images/icon_food1.gif) no-repeat 3px center;}
+.food_list2 li{ background:url(/!images/icon_food2.gif) no-repeat 3px center;}
+.food_list3 li{ background:url(/!images/icon_food3.gif) no-repeat 3px center;}
+.food_more{ text-align:right;}
+.food_more a{ color:#7d3189;}
+.food_right{ float:right; width:353px; text-align:left; margin:0 auto; overflow:hidden;}
+.food_rlist{ clear:both; width:293px; padding:25px 30px 15px; margin:0 auto 12px; line-height:1.8em;  background:#e9e9e9; overflow:hidden;}
+.food_rlist li{  clear:both; width:100%; padding:0 0 13px;border-bottom:1px dashed #838383; margin-bottom:15px;}
+.food_rlist li .food_pic{ float:left; width:80px; text-align:left;}
+.rlist_info{ float:left; width:213px;  text-align:left; color:#626262; line-height:1.8em; margin:0 auto; overflow:hidden;}
+.rlist_title{ color:#7d3189; font-size:16px; font-family:#SimHei; margin-bottom:10px; line-height:20px;}
+.rlist_title a{ color:#7d3189}
+
+/*KiwiCooked*/
+.kiwi_title{ position:relative; clear:both; width:100%; text-align:left; color:#7C0F9C; font-size:24px; font-family:SimHei; margin:0 auto; overflow:hidden;}
+.kiwi_list{ clear:both; width:100%; text-align:left; margin:15px auto 20px; overflow:hidden;}
+.kiwi_list li{ float:left; width:269px; margin-right:8px; margin-bottom:25px;}
+.kiwi_list li.fourli{ margin-right:0;}
+.kiwi_info{ clear:both; width:249px; padding:10px; background:#f2f2f9;}
+.list_title{ clear:both;font-size:18px; font-weight:bold; color:#744800;}
+.icon_kiwi{ float:left; margin:8px 0 0 5px; display:inline;}
+.list_info{height:auto !important; height:3.6em; min-height:3.6em; color:#747474; line-height:1.8em; margin-top:6px;}
+.readall{ color:#744800; font-family:SimHei; text-align:right;}
+.readall a{color:#744800;}
+/*KiwiDetail*/
+.food_info{ clear:both; width:100%; text-align:left; margin:0 auto 18px; padding:15px 0; color:#818181; border-bottom:1px dashed #868686;}
+.food_source{ float:left;text-overflow:ellipsis; white-space:nowrap; overflow:visible;}
+.food_source a{  color:#818181;}
+.food_line{float:left; width:29px; text-align:center;}
+.share{ margin:0 auto; color:#818181; overflow:hidden;}
+.kiwi_rtitle{ width:100%; color:#333333; font-size:16px; font-family:SimHei; margin-bottom:5px;}
+.kiwi_rtitle a:link,kiwi_rtitle a:visited{ color:#333333;}
+.kiwi_rtitle a:hover,kiwi_rtitle a:active{ color:#7d3189;}
+.favorite{ position:absolute; right:0; top:0;  height:37px; }
+.mun_love{ float:right; height:31px; line-height:31px; background:#ebebeb;font-size:14px; color:#333333; text-align:center; padding:0 5px;}
+.banner_right{ position:relative; float:right; width:432px; height:290px; text-align:left; margin:0 auto 25px; overflow:hidden;}
+.banner_info{ line-height:30px; color:#b6c859; font-size:18px; font-weight:bold; margin-bottom:15px;}
+.kiwi_infobar{ clear:both; width:100%; text-align:left; margin:0 auto;  overflow:hidden;}
+.kiwi_infobar dl dt{ clear:both; width:100%; text-align:left; color:#744800; font-size:16px; font-weight:bold; margin-bottom:10px; padding:15px 0 0; border-top:1px dashed #cfcfcf;}
+.kiwi_infobar dl dd{clear:both; width:100%; text-align:left; color:#333333; font-size:14px; line-height:22px;  margin-bottom:15px; }
+.kiwi_infobar dl dt.firstdt{ border:none;}
+.kiwi_infobar dl dd p{ margin-bottom:0.75em; line-height:2em; }
+.kiwi_infobar dl dd ul,.kiwi_infobar dl dd ol{ padding-left:20px; margin-left:0;}
+.kiwi_infobar dl dd ul li{list-style-type:disc;margin-bottom:0.75em; line-height:2em; }
+.kiwi_infobar dl dd ol li{ list-style-type:decimal;margin-bottom:0.75em; line-height:2em;}
+.food_infobar{ clear:both; width:100%; text-align:left; line-height:1.8em; font-size:14px; color:#333333; margin:0 auto;  overflow:hidden;}
+.food_infobar p{line-height:1.8em; margin-bottom:0.75em;}
+.article{ position:relative; clear:both; width:100%; text-align:left; margin-top:12px; padding-top:5px; border-top:1px solid #dcdcdc; color:#4a4a4a; line-height:20px;}
+.article p{ margin:5px 0;}
+.article a:link,.article a:visited{ color:#4a4a4a;}
+.article a:hover,.article a:active{ color:#8A199C;}
+.return_list{ position:absolute; top:5px; right:0;}
+
+/*HealthSafe*/
+.hs_info{ clear:both; width:675px; padding:0 30px; background:#f3f3f3; margin-bottom:12px;}
+.hs_info li{ color:#626262; line-height:20px; border-bottom:1px dashed #bcbbbb; padding:15px 0;}
+.hs_info li p{ line-height:1.8em;}
+.hs_info li p.hs_title{ color:#7d3189; font-size:16px; font-family:SimHei; line-height:20px; margin-bottom:10px;}
+.hs_info li p.hs_title a{ color:#7d3189;}
